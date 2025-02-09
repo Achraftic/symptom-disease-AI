@@ -1,8 +1,8 @@
-
 import React from 'react';
 import Features from '@/components/Features';
 import MainHero from '@/components/MainHero';
 import CTA from '@/components/CTA';
+// import Disease from '@/components/Disease';
 
 export default function HomePage() {
 
@@ -11,6 +11,7 @@ export default function HomePage() {
       <MainHero />
       <Features />
       <CTA />
+     
     </div>
   );
 }
