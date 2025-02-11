@@ -16,10 +16,9 @@ export default function Header() {
             
             <nav className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
                 {/* Logo and Navigation */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="flex items-center gap-12"
+                <div
+                    
+                   
                 >
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
@@ -27,6 +26,7 @@ export default function Header() {
                         <span className="text-xl font-bold text-gray-900">HealthAI</span>
                     </div>
                     {/* Desktop Navigation */}
+                </div>
                     <div className="hidden md:flex space-x-8 ">
 
                         {routes.map((route, index) =>
@@ -44,19 +44,9 @@ export default function Header() {
                     }
 
                     </div>
-                </motion.div>
 
                 {/* Actions and Mobile Menu Toggle */}
-                <div className="hidden md:flex items-center gap-6">
-                    <Search
-                        className="w-5 h-5 hover:text-primary cursor-pointer transition-colors"
-
-                    />
-                    <User
-                        className="w-5 h-5 hover:text-primary cursor-pointer transition-colors"
-
-                    />
-                </div>
+            
                 <button
                     className="md:hidden"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}

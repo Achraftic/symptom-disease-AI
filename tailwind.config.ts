@@ -14,11 +14,12 @@ export default {
         secondary: "#48CAE4", // Lighter Blue for accents
         background: "#E3F2FD", // Soft Light Blue for medical feel
         foreground: "#0A2540", // Dark blue for contrast
+        safari: "#FFCC00", // Example Safari color
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "8px",
+        md: "6px",
+        sm: "4px",
       },
     },
   },
